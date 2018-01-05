@@ -13,7 +13,7 @@ return [
     'user' => [
         'add_default_role_on_register' => true,
         'default_role'                 => 'user',
-        'namespace'                    => App\User::class,
+        'namespace'                    => App\Entities\User::class,
         'default_avatar'               => 'users/default.png',
     ],
 
@@ -42,7 +42,7 @@ return [
     */
 
     'models' => [
-        //'namespace' => 'App\\',
+        'namespace' => 'App\\Entities',
     ],
 
     /*
@@ -126,13 +126,13 @@ return [
         /*
          * Select default language
          */
-        'default' => 'en',
+        'default' => 'es',
 
         /*
          * Select languages that are supported.
          */
         'locales' => [
-            'en',
+            'es',
             //'pt',
         ],
     ],
